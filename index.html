@@ -1,1 +1,92 @@
-Test
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pictopia is a simple and lightweight image gallery that works everywhere, allowing you to display images in a responsive grid with fullscreen modal view and thumbnail previews. Fast and efficient.">
+    <meta name="keywords" content="Pictopia, simple image gallery, lightweight gallery, responsive gallery, grid layout, fullscreen image gallery">
+    <meta name="author" content="Your Name or Company">
+    <meta property="og:title" content="Pictopia Documentation">
+    <meta property="og:description" content="Learn how to use Pictopia, a simple and light image gallery that works everywhere with a responsive grid layout and fullscreen modal view.">
+    <meta property="og:image" content="link-to-your-logo-image.jpg">
+    <meta property="og:url" content="https://sumeetghimire.github.io/Pictopia-Documentation/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Pictopia Documentation">
+    <meta name="twitter:description" content="Learn how to use Pictopia, a simple and light image gallery that works everywhere with a responsive grid layout and fullscreen modal view.">
+    <meta name="twitter:image" content="/logoPictopia.jpg">
+
+    <title>Pictopia Documentation - Simple and Lightweight Image Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/sumeetghimire/pictopia/pictopia.js"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+<header class="bg-blue-600 p-6 text-white text-center">
+    <!-- Add the logo here -->
+    <img src="/logoPictopia.jpg" alt="Pictopia Logo" class="mx-auto mb-4" style="max-width: 150px;">
+    <h1 class="text-3xl font-bold">Pictopia Documentation</h1>
+    <p class="mt-2">A Simple Gallery Library for Images</p>
+</header>
+
+<main class="container mx-auto mt-8 p-4 bg-white shadow-md rounded-lg">
+    <section class="mb-6">
+        <h2 class="text-2xl font-semibold">Introduction</h2>
+        <p class="mt-2">
+            Pictopia is a simple gallery library that supports displaying images in a responsive grid layout.
+            You can also view these images in a fullscreen modal with navigation, zoom, and thumbnail previews.
+        </p>
+    </section>
+    <section class="mb-6">
+        <h2 class="text-2xl font-semibold">Required JavaScript</h2>
+        <p class="mt-2">Make sure to include jQuery and the Pictopia script in your HTML:</p>
+        <pre class="bg-gray-200 p-4 rounded-lg overflow-auto">
+<code>&lt;script src="https://cdn.jsdelivr.net/gh/sumeetghimire/pictopia/pictopia.js"&gt;&lt;/script&gt;</code>
+        </pre>
+    </section>
+    <section class="mb-6">
+        <h2 class="text-2xl font-semibold">How to Use</h2>
+        <p class="mt-2">Follow these steps to integrate Pictopia into your website:</p>
+        <ol class="list-decimal list-inside mt-2">
+            <li>Include the Pictopia library in your project (see the script below).</li>
+            <li>Create a container with the class <code>.Pictopia</code> and add your images inside it.</li>
+            <li>Initialize the library using <code>Pictopia({thumbnail: true, displayPerRow: 3})</code>.</li>
+        </ol>
+    </section>
+
+    <section class="mb-6">
+        <h2 class="text-2xl font-semibold">Example Code</h2>
+        <p class="mt-2">Here is a simple example showing how to display two images:</p>
+        <pre class="bg-gray-200 p-4 rounded-lg overflow-auto">
+<code>&lt;div class="Pictopia"&gt;  //Pictopia class is required
+    &lt;img src="image1.jpg" alt="Image 1" class="max-w-full"&gt;
+    &lt;img src="image2.jpg" alt="Image 2" class="max-w-full"&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+  Pictopia({ thumbnail: true, displayPerRow: 3 });
+&lt;/script&gt;</code>
+        </pre>
+    </section>
+
+    <section class="mb-6">
+        <h2 class="text-2xl font-semibold">Live Example</h2>
+        <p class="mt-2">Below is a live example of the Pictopia gallery with two images:</p>
+        <div class="Pictopia mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <img src="https://via.placeholder.com/400x300?text=Image+1" alt="Image 1" class="max-w-full h-auto">
+            <img src="https://via.placeholder.com/400x300?text=Image+2" alt="Image 2" class="max-w-full h-auto">
+        </div>
+    </section>
+
+    <section class="mb-6">
+        <h2 class="text-2xl font-semibold">Example</h2>
+        <p class="mt-2">Recoded Example:</p>
+        <div class="mt-4">
+            <video src="/Gallery1.mp4" controls autoplay muted class="max-w-full h-auto"></video>
+        </div>
+    </section>
+</main>
+
+<footer class="bg-blue-600 text-white text-center p-4 mt-8">
+    <p>&copy; 2024 Pictopia Library Documentation</p>
+</footer>
+</body>
+</html>
